@@ -3,8 +3,8 @@ services:
     name: strapi
     env: node
     plan: starter
-    buildCommand: install &&  build
-    startCommand: rsync -a public/ /data/public/ && yarn start
+    buildCommand: npm install && npm build
+    startCommand: rsync -a public/ /data/public/ && npm start
     healthCheckPath: /_health
     disk:
       name: strapi-data

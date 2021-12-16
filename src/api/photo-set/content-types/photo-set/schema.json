@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_sets",
+  "info": {
+    "singularName": "photo-set",
+    "pluralName": "photo-sets",
+    "displayName": "Photo Set",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "editorial",
+        "celebrity",
+        "tv",
+        "commercial"
+      ],
+      "required": true
+    },
+    "secondaryCategory": {
+      "type": "enumeration",
+      "enum": [
+        "editorial",
+        "celebrity",
+        "tv",
+        "commercial"
+      ]
+    },
+    "credit": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
